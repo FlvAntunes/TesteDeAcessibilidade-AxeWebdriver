@@ -2,7 +2,7 @@
 # Teste automatizado de acessibilidade
 
 Este é um modelo criado como exemplo para realizar a automação de testes de acessibilidade, utilizando os frameworks Protractor+Cucumber com o Axe
-O exemplo foi executado em uma url criada para treinar automação de teste WEB.
+O exemplo foi executado em uma URL criada para treinar automação de teste WEB.
 
 ___
 __
@@ -18,33 +18,33 @@ Para saber mais sobre o "@axe-core/webdriverjs" acesse:
 #
 # Getting Started
 
-Antes de começar, verifique se voce tem o Node instalado em sua maquina.
+Antes de começar, verifique se você tem o Node instalado em sua maquina.
 ```console
 node --version
 npm --version
 ```
-Se nao tiver procure como instalar em - https://nodejs.org
+Se não tiver, procure como instalar em - https://nodejs.org
 ___
 
-Instale as dependencias executando o comando na raiz do projeto: 
+Instale as dependências executando o comando na raiz do projeto: 
 ```console
 npm install
 ```
-Em seguida, atualize os drivers dos navegadores utilizando o comando:
+Em seguida, atualize os drivers dos navegadores:
 
 ```console
 npm run wm-update
 ```
 
-Agora execute os testes com o comando:
+Agora execute os testes:
 
 ```console
 npm run test
 ```
-Após a execução dos testes, um relatorio em HTML é gerado e aberto automaticamente com as informações da execução. 
-O relatorio utilizado foi o [multiple-cucumber-html-reporter](https://www.npmjs.com/package/multiple-cucumber-html-reporter)
+Após a execução dos testes, um relatório em HTML é gerado e aberto automaticamente com as informações da execução. 
+O relatório utilizado foi o [multiple-cucumber-html-reporter](https://www.npmjs.com/package/multiple-cucumber-html-reporter)
 
-# Analise de impacto e conformidade
+# Análise de impacto e conformidade
 No relatório é possivel verificar os alertas de acessibilidade.
 Segue abaixo um exemplo de como o alerta é exibido:
 
@@ -82,7 +82,7 @@ Segue abaixo um exemplo de como o alerta é exibido:
     ]
   },
 ```
-Neste exemplo temos um impacto critico sendo validado as boas praticas.
+Neste exemplo temos um impacto crítico sendo validado as boas práticas.
 
 Ao abrir o link indicado no **"helpUrl"**, nele é exibido toda a descrição do impacto e até mesmo a forma de correção.
 Também é exibido um resumo com as principais informações.
@@ -92,7 +92,7 @@ Também é exibido um resumo com as principais informações.
 
 
 ----
-Segue abaixo o link que contem a lista de todas as regras de acessibilidade que podem ser aplicadas nos testes
+Segue abaixo o link que contém a lista de todas as regras de acessibilidade que podem ser aplicadas nos testes
 - https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md
 
 
