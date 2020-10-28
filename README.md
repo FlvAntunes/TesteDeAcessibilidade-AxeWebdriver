@@ -5,9 +5,9 @@ Este é um modelo criado como exemplo para realizar a automação de testes de a
 O exemplo foi executado em uma URL criada para treinar automação de teste WEB.
 
 ___
-__
+
 O **Protractor** é um framework de teste E2E para aplicações Angular e AngularJS. O Protractor executa testes no seu aplicativo em execução em um navegador real, interagindo com ele como um usuário faria.
-__
+
 **Axe** é um mecanismo de teste de acessibilidade para sites e outras interfaces de usuário baseadas em HTML. É rápido, seguro, leve, e foi construído para se integrar perfeitamente a qualquer ambiente de teste existente para que você possa automatizar testes de acessibilidade ao lado de seus testes funcionais regulares.
 
 O **"@axe-core/webdriverjs"** fornece uma API Axe  para o WebDriverJS do Selenium e injeta automaticamente em todos os Frames.

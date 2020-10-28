@@ -41,7 +41,6 @@ exports.checkWcag21aa = async function () {
 }
 
 exports.checkAll = async function () {
-
     let results = await builder.analyze();
 
     return expect(results.violations.length).to.be.equal(
