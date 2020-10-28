@@ -1,8 +1,6 @@
 var { Given, When, Then, } = require("cucumber");
 var { setDefaultTimeout } = require("cucumber");
-// var axe = require('axe-core');
 
-const axe = require('axe-webdriverjs');
 
 setDefaultTimeout(80 * 1000);
 

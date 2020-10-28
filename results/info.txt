@@ -1,0 +1,1 @@
+Nesta pasta contem o resultado do teste em um arquivo .json utilizado para gerar relatorios.
