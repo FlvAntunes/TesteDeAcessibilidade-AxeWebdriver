@@ -1,9 +1,6 @@
 "use strict";
 var { After, Before} = require("cucumber");
-
-
 var driver = browser.driver;
-
 
 
 function clearStorage() {
@@ -14,17 +11,8 @@ function clearStorage() {
 
 
 
-/********* LOGIN ************/
 Before(function () {
   return browser.waitForAngularEnabled(false);
-  // browser.driver.manage().window().maximize();
-  // browser.manage().window().setSize(1600,2400); 
-  // return driver.get("http://zero.webappsecurity.com/");
-
-
- 
-     
-    
 });
 
 
@@ -32,7 +20,6 @@ Before(function () {
 /********* PÓS EXECUÇÃO ************/
 After(function (scenarioResult) {
   let self = this;
-
 
   if (scenarioResult.result.status === 'failed') {
     browser.takeScreenshot().then(function (screenshot) {
@@ -44,7 +31,6 @@ After(function (scenarioResult) {
 
     });
   }
-
 
   driver.manage().deleteAllCookies();
   return driver.executeScript(clearStorage); //função para limpar cash do navegador.
