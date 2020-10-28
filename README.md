@@ -44,11 +44,11 @@ npm run test
 Após a execução dos testes, um relatorio em HTML é gerado e aberto automaticamente com as informações da execução. 
 O relatorio utilizado foi o [multiple-cucumber-html-reporter](https://www.npmjs.com/package/multiple-cucumber-html-reporter)
 
-# Analize de impactor e conformidade
+# Analise de impacto e conformidade
 No relatório é possivel verificar os alertas de acessibilidade.
 Segue abaixo um exemplo de como o alerta é exibido:
 
-```json
+```txt
 {
     "description": "Ensures (meta name=\"viewport\") does not disable text scaling and zooming",
     "help": "Zooming and scaling must not be disabled",
@@ -84,7 +84,7 @@ Segue abaixo um exemplo de como o alerta é exibido:
 ```
 Neste exemplo temos um impacto critico sendo validado as boas praticas.
 
-Ao abrir o link indicado no "helpUrl", nele é exibido toda a descrição do impacto e até mesmo a forma de correção.
+Ao abrir o link indicado no **"helpUrl"**, nele é exibido toda a descrição do impacto e até mesmo a forma de correção.
 Também é exibido um resumo com as principais informações.
 
 ![resumoImpacto](images/impacto.png)
