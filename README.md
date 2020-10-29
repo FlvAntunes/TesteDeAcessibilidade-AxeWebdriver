@@ -18,12 +18,12 @@ Para saber mais sobre o "@axe-core/webdriverjs" acesse:
 #
 # Getting Started
 
-Antes de começar, verifique se você tem o Node instalado em sua maquina.
+Antes de começar, verifique se você tem instalado em sua maquina o **Node** e o navegador **Google Chrome**.
 ```console
 node --version
 npm --version
 ```
-Se não tiver, procure como instalar em - https://nodejs.org
+Se não tiver o **Node**, procure como instalar em - https://nodejs.org
 ___
 
 Instale as dependências executando o comando na raiz do projeto: 
