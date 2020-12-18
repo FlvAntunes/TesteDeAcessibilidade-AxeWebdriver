@@ -1,4 +1,4 @@
-![Axe Logo](imgs/AxeLogo.png)
+![Axe Logo](imgs/axELogo.png)
 
 # Teste automatizado de acessibilidade
 
