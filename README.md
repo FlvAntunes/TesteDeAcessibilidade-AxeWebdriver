@@ -1,5 +1,4 @@
 ![Axe Logo](imgs/axELogo.png)
-
 # Teste automatizado de acessibilidade
 
 Este é um modelo criado como exemplo para realizar a automação de testes de acessibilidade utilizando os framework Axe.
