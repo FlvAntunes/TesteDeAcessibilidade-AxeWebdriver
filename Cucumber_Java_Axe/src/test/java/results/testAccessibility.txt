@@ -1,0 +1,37 @@
+ACCESSIBILITY CHECK
+VIOLATIONS check for: http://zero.webappsecurity.com/bank/account-summary.html
+Found 5 items
+
+1: Elements must have sufficient color contrast
+Description: Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds
+Help URL: Elements must have sufficient color contrast
+Impact: serious
+Tags: cat.color, wcag2aa, wcag143
+
+
+2: Document must have one main landmark
+Description: Ensures the document has a main landmark
+Help URL: Document must have one main landmark
+Impact: moderate
+Tags: cat.semantics, best-practice
+
+
+3: Zooming and scaling must not be disabled
+Description: Ensures <meta name="viewport"> does not disable text scaling and zooming
+Help URL: Zooming and scaling must not be disabled
+Impact: critical
+Tags: cat.sensory-and-visual-cues, best-practice, ACT
+
+
+4: Page must contain a level-one heading
+Description: Ensure that the page, or at least one of its frames contains a level-one heading
+Help URL: Page must contain a level-one heading
+Impact: moderate
+Tags: cat.semantics, best-practice
+
+
+5: All page content must be contained by landmarks
+Description: Ensures all page content is contained by landmarks
+Help URL: All page content must be contained by landmarks
+Impact: moderate
+Tags: cat.keyboard, best-practice
