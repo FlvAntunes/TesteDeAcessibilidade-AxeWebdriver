@@ -1,4 +1,5 @@
 ![Logo](images/logo1.png)
+<img src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
 # Teste automatizado de acessibilidade Selenium Java, Cucumber, AXE.
 
 Este é um modelo criado como exemplo para realizar a automação de testes de acessibilidade utilizando os frameworks Selenium+Cucumber+Java com o Axe.
@@ -31,6 +32,29 @@ Instale as dependências e rode o primeiro teste executando o comando abaixo na 
 mvn  install
 ```
 Após a execução dos testes, um relatório em HTML é gerado na pasta `target\generated-report`. Dentro desta pasta abra o arquivo `index.html` para visualizar o relatório no seu browser e acessar todos os detalhes da execução. Ele deve ser exibido conforme abaixo:
+
+![report](imgs/)
+
+
+O relatório utilizado foi o [Cluecumber Report Plugin](https://github.com/trivago/cluecumber-report-plugin), para mais configurações acesse a documentação no [link](https://github.com/trivago/cluecumber-report-plugin).
+
+___
+
+**Execução dos Testes**
+
+Apos a instalação das dependências e a execução do primeiro teste, voce pode executar somente os teste utilizando o comando abaixo na raiz do projeto:
+
+```console
+mvn test
+```
+
+Após essa execução, o relatório de teste não será atualizado automaticamente. Para atualizar o relatório execute o comando abaixo
+
+```console
+mvn cluecumber-report:reporting
+```
+___
+
 
 # Análise de impacto e conformidade
 No relatório é possivel verificar os alertas de acessibilidade.

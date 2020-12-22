@@ -1,5 +1,7 @@
 ![Logo](images/logo1.png)
+<img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 # Teste automatizado de acessibilidade
+
 
 Este é um modelo criado como exemplo para realizar a automação de testes de acessibilidade utilizando os frameworks Protractor+Cucumber com o Axe.
 O exemplo foi executado em uma URL criada para treinar automação de teste WEB.
