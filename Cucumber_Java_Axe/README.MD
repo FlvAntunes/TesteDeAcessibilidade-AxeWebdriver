@@ -1,5 +1,7 @@
-![Logo](imgs/AxeJavaLogo.png)
 <img src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
+
+![Logo](imgs/AxeJavaLogo.png)
+
 # Teste automatizado de acessibilidade Selenium Java, Cucumber, AXE.
 
 Este é um modelo criado como exemplo para realizar a automação de testes de acessibilidade utilizando os frameworks Selenium+Cucumber+Java com o Axe.
