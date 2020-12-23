@@ -32,7 +32,7 @@
 					<skip>false</skip>
 					<customPageTitle>My Report</customPageTitle>
 					<failScenariosOnPendingOrUndefinedSteps>true</failScenariosOnPendingOrUndefinedSteps>
-					<startPage>ALL_SCENARIOS</startPage>
+					<startPage>SCENARIO_SEQUENCE</startPage>
 					<expandBeforeAfterHooks>true</expandBeforeAfterHooks>
 					<sourceJsonReportDirectory>${project.build.directory}</sourceJsonReportDirectory>
 					<generatedHtmlReportDirectory>${project.build.directory}/generated-report</generatedHtmlReportDirectory>

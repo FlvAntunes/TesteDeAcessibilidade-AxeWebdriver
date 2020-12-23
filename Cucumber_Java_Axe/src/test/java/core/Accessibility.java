@@ -38,7 +38,7 @@ public class Accessibility {
 
 		scenario.attach(jsonOutput, "application/json", "Resultado");
 
-		Assert.assertEquals("No violations found", 0, violations.size());
+		Assert.assertEquals("violations found", 0, violations.size());
 
 	}
 
@@ -52,7 +52,7 @@ public class Accessibility {
 
 		scenario.attach(jsonOutput, "application/json", "Resultado");
 
-		Assert.assertEquals("No violations found", 0, violations.size());
+		Assert.assertEquals("violations found", 0, violations.size());
 
 	}
 
@@ -71,7 +71,7 @@ public class Accessibility {
 
 		scenario.attach(jsonOutput, "application/json", "Resultado");
 
-		Assert.assertEquals("No violations found", 0, violations.size());
+		Assert.assertEquals("violations found", 0, violations.size());
 
 	}
 

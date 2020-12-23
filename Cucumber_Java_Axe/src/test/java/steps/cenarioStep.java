@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 import javax.naming.OperationNotSupportedException;
 
+import org.junit.Assert;
+
 import core.Accessibility;
 import core.BasePage;
 import core.DriverFactory;
@@ -14,10 +16,12 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import pages.LoginPage;
+import pages.TransferPage;
 
 public class cenarioStep extends BasePage {
 
 	private static LoginPage login = new LoginPage();
+	private static TransferPage transferencia = new TransferPage();
 	private static core.Accessibility teste = new Accessibility();
 
 	public static Object body;
@@ -43,17 +47,18 @@ public class cenarioStep extends BasePage {
 
 	@Quando("ele acessar a funcionalidade de transferencia")
 	public void eleAcessarAFuncionalidadeDeTransferencia() {
-
+		transferencia.AbaTransferencia();
 	}
 
 	@Quando("preencher o valor {string}")
 	public void preencherOValor(String string) {
-
+		transferencia.CampoValor(string);
 	}
 
 	@Quando("confirmar a transferencia")
 	public void confirmarATransferencia() {
-
+		transferencia.BotaoContinue();
+		transferencia.BotaoContinue();
 	}
 
 	@Entao("verifico o padrão de melhores praticas de acessibilidade")
@@ -69,6 +74,8 @@ public class cenarioStep extends BasePage {
 
 	@Entao("deve ser exibido a mensagem {string}")
 	public void deveSerExibidoAMensagem(String string) {
+String mensagem = transferencia.MensagemTransfSucesso();
+Assert.assertEquals(mensagem, string);
 
 	}
 
