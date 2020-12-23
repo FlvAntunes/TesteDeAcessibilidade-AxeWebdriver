@@ -1,7 +1,7 @@
 ![Axe Logo](imgs/axe1.png)
 # Teste automatizado de acessibilidade com Axe
 
-Este é um modelo criado como exemplo para realizar a automação de testes de acessibilidade utilizando os framework Axe.
+Neste repositório contem modelos criados como exemplo para realizar a automação de testes de acessibilidade utilizando o framework Axe.
 
 ___
 
@@ -9,15 +9,15 @@ ___
 
 #
 ## Exemplos neste repositório
-<img src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>[<img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>](Protractor_AxeWebdriver)
+[<img src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>](Cucumber_Java_Axe)[<img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>](Protractor_AxeWebdriver)
 
 Abaixo segue os links dos exemplos que você irá encontrar neste repositório.
 Neles você também irá encontrar detalhes sobre como executá-los.
 
 - **JavaScript**
-   * [Protractor e Cucumber com Axe](Protractor_AxeWebdriver).
+   * [Protractor + Cucumber com AXE](Protractor_AxeWebdriver).
 - **Java** 
-   * [Selenium + Cucumber + Java com Axe (Em desenvolvimento)](Cucumber_Java_Axe).
+   * [Selenium + Cucumber + Java com AXE](Cucumber_Java_Axe).
 
 
 

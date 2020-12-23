@@ -1,4 +1,4 @@
-![Logo](images/logo1.png)
+![Logo](imgs/AxeJavaLogo.png)
 <img src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
 # Teste automatizado de acessibilidade Selenium Java, Cucumber, AXE.
 
@@ -31,9 +31,9 @@ Instale as dependências e rode o primeiro teste executando o comando abaixo na 
 ```console
 mvn  install
 ```
-Após a execução dos testes, um relatório em HTML é gerado na pasta `target\generated-report`. Dentro desta pasta abra o arquivo `index.html` para visualizar o relatório no seu browser e acessar todos os detalhes da execução. Ele deve ser exibido conforme abaixo:
+Após a execução dos testes, um relatório em HTML é gerado na pasta `target\generated-report`. Dentro desta pasta abra o arquivo `index.html` para visualizar o relatório no seu browser e acessar todos os detalhes da execução. 
 
-![report](imgs/)
+
 
 
 O relatório utilizado foi o [Cluecumber Report Plugin](https://github.com/trivago/cluecumber-report-plugin), para mais configurações acesse a documentação no [link](https://github.com/trivago/cluecumber-report-plugin).
@@ -42,13 +42,13 @@ ___
 
 **Execução dos Testes**
 
-Apos a instalação das dependências e a execução do primeiro teste, voce pode executar somente os teste utilizando o comando abaixo na raiz do projeto:
+Após a instalação das dependências e a execução do primeiro teste, você pode executar somente os testes utilizando o comando abaixo na raiz do projeto:
 
 ```console
 mvn test
 ```
 
-Após essa execução, o relatório de teste não será atualizado automaticamente. Para atualizar o relatório execute o comando abaixo
+Após essa execução, o relatório de teste não será atualizado automaticamente. Para atualizar o relatório execute o comando abaixo:
 
 ```console
 mvn cluecumber-report:reporting
@@ -57,62 +57,66 @@ ___
 
 
 # Análise de impacto e conformidade
-No relatório é possivel verificar os alertas de acessibilidade.
+No relatório é possível verificar os alertas de acessibilidade.
 Segue abaixo um exemplo de como o alerta é exibido:
 
 ```txt
-{
-    "description": "Ensures (meta name=\"viewport\") does not disable text scaling and zooming",
-    "help": "Zooming and scaling must not be disabled",
-    "helpUrl": "https://dequeuniversity.com/rules/axe/4.0/meta-viewport?application=webdriverjs",
+ {
     "id": "meta-viewport",
+    "description": "Ensures \u003cmeta name\u003d\"viewport\"\u003e does not disable text scaling and zooming",
+    "help": "Zooming and scaling must not be disabled",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.1/meta-viewport?application\u003daxeAPI",
     "impact": "critical",
+    "tags": [
+      "cat.sensory-and-visual-cues",
+      "best-practice",
+      "ACT"
+    ],
     "nodes": [
       {
-        "all": [],
+        "impact": "critical",
         "any": [
           {
-            "data": "user-scalable=no",
             "id": "meta-viewport",
             "impact": "critical",
-            "message": "user-scalable=no on (meta) tag disables zooming on mobile devices",
+            "message": "user-scalable\u003dno on \u003cmeta\u003e tag disables zooming on mobile devices",
+            "data": "user-scalable\u003dno",
             "relatedNodes": []
           }
         ],
-        "failureSummary": "Fix any of the following:\n  user-scalable=no on (meta) tag disables zooming on mobile devices",
-        "html": "(meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\")",
-        "impact": "critical",
+        "all": [],
         "none": [],
+        "failureSummary": "Fix any of the following:\n  user-scalable\u003dno on \u003cmeta\u003e tag disables zooming on mobile devices",
+        "html": "\u003cmeta name\u003d\"viewport\" content\u003d\"width\u003ddevice-width, initial-scale\u003d1.0, maximum-scale\u003d1.0, user-scalable\u003dno\"\u003e",
         "target": [
-          "meta[name=\"viewport\"]"
+          "meta[name\u003d\"viewport\"]"
         ]
       }
-    ],
-    "tags": [
-      "cat.sensory-and-visual-cues",
-      "best-practice"
     ]
   },
 ```
 Neste exemplo temos um impacto crítico sendo validado as boas práticas.
 
-Ao abrir o link indicado no **"helpUrl"**, nele é exibido toda a descrição do impacto e até mesmo a forma de correção.
+Ao abrir o link indicado no [**"helpUrl"**](https://dequeuniversity.com/rules/axe/4.1/meta-viewport?application\u003daxeAPI), nele é exibido toda a descrição do impacto, a importância e a forma de correção.
 Também é exibido um resumo com as principais informações.
 
-![resumoImpacto](images/impacto.png)
+![resumoImpacto](imgs/impacto.png)
 
 
 
 ----
-Segue abaixo o link que contém a lista de todas as regras de acessibilidade que podem ser aplicadas nos testes
+Segue abaixo o link que contém a lista de todas as regras de acessibilidade que podem ser aplicadas nos testes:
 - https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md
 
 
 
-# Referencias
+# Referências
 
 
 
-- https://mvnrepository.com/artifact/com.deque.html.axe-core/selenium/4.1.1
-- https://www.deque.com/blog/axe-core-packages-migrating/
-- https://github.com/dequelabs/axe-selenium-java
+- **AXe Selenium Integration** https://mvnrepository.com/artifact/com.deque.html.axe-core/selenium/4.1.1
+- **Deque Systems** - https://www.deque.com/blog/axe-core-packages-migrating/
+- **dequelabs/axe-core-maven-html** - https://github.com/dequelabs/axe-selenium-java
+- **Selenium** - https://www.selenium.dev/
+- **Cucumber** - https://cucumber.io/
+- **Cluecumber Report Plugin** -https://github.com/trivago/cluecumber-report-plugin
